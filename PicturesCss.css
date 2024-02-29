@@ -1,0 +1,23 @@
+﻿
+#fullCon1 {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: white;
+}
+
+#picsContent{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    position: relative;
+    margin-top: 15vh;
+    gap: 12px;
+    justify-content: center;
+}
+
+    #picsContent img {
+        width: 100%;
+        aspect-ratio: 4/4;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+

@@ -1,0 +1,123 @@
+﻿:root {
+    --Primary60: #e9f4e9;
+    --Secondary30: #33353d;
+    --Accent10: #7a79dd;
+    --Extra5: #FFFFFF;
+    --textColorLight: #e9f1ff;
+    --textColorDark: #141417;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+#dataSect {
+    position: relative;
+}
+
+#dataTeachers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40%);
+    width: 100%;
+    gap: 50px;
+    position: relative;
+    height: auto;
+    color: var(--textColorDark);
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+    #dataTeachers * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #dataTeachers gridItem {
+        position: relative;
+        display: grid;
+        margin-top: 10%;
+        gap: 0%;
+        height: max-content;
+    }
+
+    #dataTeachers img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover
+    }
+
+    #dataTeachers h1 {
+        top: 0%;
+        background-color: var(--Secondary30);
+        color: white;
+        position: relative;
+        font-size: 2em;
+        min-height: 20%;
+        z-index: 1;
+        opacity: 0;
+    }
+    #dataTeachers h2 {
+        top: -10%;
+        color: var(--textColorDark);
+        position: absolute;
+
+        font-size: 2.5em;
+        z-index: 2;
+    }
+
+
+
+    #dataTeachers gridItem shadowUp {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
+        opacity: 0;
+        transition: 0.5s
+    }
+
+    #dataTeachers gridItem shadowDown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        opacity: 0;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+        transition: 0.5s;
+    }
+
+    #dataTeachers gridItem:hover shadowUp, #dataTeachers gridItem:hover shadowDown, #dataTeachers gridItem:hover h1 {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+
+
+
+
+#b4txc{
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 0.6em;
+    }
+}
+@media (max-width: 425px)
+{
+
+    html{
+        font-size: 0.3em;
+    }
+}

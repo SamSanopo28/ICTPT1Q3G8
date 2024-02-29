@@ -1,0 +1,487 @@
+﻿:root {
+    --Primary60: #e9f4e9;
+    --Secondary30: #33353d;
+    --Accent10: #7a79dd;
+    --Extra5: #FFFFFF;
+    --textColorLight: #e9f1ff;
+    --textColorDark: #141417;
+}
+
+
+light{
+    color: var(--textColorLight)
+}
+dark {
+    color: var(--textColorDark)
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: 0;
+    height: max-content;
+    background-color: var(--Primary60);
+    color: var(--textColor);
+}
+
+
+   
+
+    .mainH2{
+        width: 50%;
+        height: auto;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
+        margin-left: 6vw;
+        text-align: left;
+        font-size: 1.2em;
+        top: 150%;
+        display: inline-block;
+        text-transform: capitalize;
+    }
+
+    .mainH1 {
+        text-transform: capitalize;
+        font-size: 4em;
+        top: 110%;
+        margin-top: 6vh;
+        margin-left: 6vw
+    }
+
+ 
+#section1 {
+}
+
+    #section1h2 {
+        padding: 5px;
+        border-radius: 2px;
+        text-align: center;
+
+        font-size: 1.6em;
+        width: 100%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+
+    }
+
+    #section1h1 {
+        padding: 5px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        font-size: 6em;
+        word-spacing: -25px;
+    }
+
+
+centerButton{
+    display: flex;
+    justify-content: center
+}
+
+
+
+mainTextInSectionOne{
+    margin-top: 15vh;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+#S1leftCon1 {
+    background-color: var(--Secondary30);
+    color: var(--textColorLight);
+}
+
+
+
+
+/*
+   START OF TEMPLATE
+   START OF TEMPLATE
+   START OF TEMPLATE
+*/
+
+leftContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+leftContainer img{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+
+leftContainer h1{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    font-size: 3em;
+}
+
+leftContainer p {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+
+
+rightContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    rightContainer img {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    rightContainer h1 {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        font-size: 3em;
+    }
+
+    rightContainer p {
+        position: absolute;
+        left: 2%;
+        top: 30%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+
+leftContainerFloat {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    leftContainerFloat img {
+        position: relative;
+        width: 45%;
+        left: 50%;
+        height: 45%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+
+leftContainerFloat h1 {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    font-size: 3em;
+}
+
+leftContainerFloat p {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+
+rightContainerFloat {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    rightContainerFloat img {
+        position: relative;
+        width: 45%;
+        left: 5%;
+        height: 45%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+
+        padding: 0;
+    }
+
+
+    rightContainerFloat h1 {
+        position: absolute;
+        left: 55%;
+        top: 15%;
+        font-size: 3em;
+    }
+
+    rightContainerFloat p {
+        position: absolute;
+        left: 55%;
+        top: 35%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+
+
+fullContain img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -10vh;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+
+fullContain h1 {
+    position: relative;
+    left: 10%;
+    font-size: 4em;
+}
+
+fullContain p:not(.left) {
+    position: relative;
+    left: 15%;
+    font-size: 1.5em;
+    width: 40%;
+    margin-top: 5vh;
+}
+
+fullContain p.left {
+    position: relative;
+    margin-top: 5vh;
+    left: 45%;
+    font-size: 1.5em;
+    width: 40%;
+}
+/*
+   END OF TEMPLATE
+   END OF TEMPLATE
+   END OF TEMPLATE
+*/
+
+
+
+
+
+
+
+#S1fullCon1 {
+    color: var(--textColorLight);
+    height: max-content;
+}
+fullContain {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: max-content;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+
+
+
+#dataSect{
+    background-color: #DDDDDD
+}
+
+#datas {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 90%;
+    gap: 5%;
+    position: relative;
+    height: auto;
+    color: var(--textColorDark);
+    margin-bottom: 15vh;
+    margin-left: 0; 
+    margin-top: 10vh;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+    #datas h1 {
+        font-size: 1.5em;
+        position: relative;
+        display: inline-grid;
+        padding: 20px;
+    }
+
+    #datas span {
+        display: inline-grid;
+        position: relative;
+        color: var(--Accent10);
+        font-size: 3em;
+        text-align: left;
+    }
+
+
+
+
+
+
+@media (max-width: 1024px)
+{
+
+    #S1leftCon1 {
+        font-size: 0.8em
+    }
+
+    mainTextInSectionOne {
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #S1leftCon1 {
+        font-size: 0.6em
+    }
+    mainTextInSectionOne {
+        font-size: 0.6em;
+    }
+    #section1h1 {
+        word-spacing: -12px
+    }
+
+    #valuesSect {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 558px) {
+
+    #S1leftCon1 {
+        font-size: 0.5em
+    }
+
+    mainTextInSectionOne {
+        font-size: 0.45em;
+    }
+
+    #section1h1 {
+        word-spacing: -10px
+    }
+
+    #valuesSect {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 425px) {
+    #S1leftCon1 {
+        font-size: 0.4em
+    }
+    mainTextInSectionOne {
+        font-size: 0.4em;
+    }
+
+    #section1h1 {
+        word-spacing: -10px
+    }
+
+
+    fullContain h1{
+        font-size: 2em
+    }
+    fullContain p:not(.left) {
+        font-size: 1.5em;
+        width: 60%;
+    }
+
+    #valuesSect {
+        font-size: 0.5em;
+    }
+    #dataSect {
+        font-size: 0.65em;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    #S1leftCon1 {
+        font-size: 0.35em
+    }
+
+    mainTextInSectionOne {
+        font-size: 0.35em;
+    }
+
+    #section1h1 {
+        word-spacing: -7px
+    }
+
+    #valuesSect {
+        font-size: 0.55em;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #S1leftCon1 {
+        font-size: 0.3em
+    }
+
+    mainTextInSectionOne {
+        font-size: 0.28em;
+    }
+
+    #section1h1 {
+        word-spacing: -7px
+    }
+    #section1h2 {
+        font-size: 2.3em;
+    }
+
+    #valuesSect {
+        font-size: 0.4em;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+}

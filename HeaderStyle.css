@@ -1,0 +1,290 @@
+﻿:root {
+    --Primary60: #e9f4e9;
+    --Secondary30: #33353d;
+    --Accent10: #7a79dd;
+    --Extra5: #FFFFFF;
+    --textColor: #221F1F;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--Primary60)
+}
+
+accent {
+    color: var(--Accent10);
+}
+
+accentOnSecondary {
+    color: var(--Accent10);
+    background-color: var(--Primary60);
+    width: max-content;
+    height: max-content
+}
+
+secondarizeBg {
+    background-color: var(--Secondary30);
+    display: block;
+    position: relative;
+    padding-top: 5%;
+    color: var(--Primary60);
+    width: 100%;
+    height: max-content
+}
+
+
+
+
+#sub1, #sub2, #sub3 {
+    top: 15px;
+    opacity: 0;
+    z-index: 4;
+    text-align: left;
+    position: absolute
+}
+
+#containLi1, #containLi2, #containLi3 {
+    position: relative;
+}
+
+
+
+
+.subLi a {
+    text-align: left;
+    opacity: 1;
+    margin-bottom: 5%;
+    color: var(--Accent10)
+}
+
+    .subLi a:hover {
+        color: red
+    }
+
+
+
+
+
+#containLi1:hover ul#sub1 {
+    opacity: 1;
+    transition: 0.6s;
+    top: 150%;
+    position: absolute;
+    padding: 5px;
+    left: -5px;
+    border-radius: 5px;
+    background-color: var(--Extra5);
+    width: max-content;
+    box-shadow: 0 0px 2px black;
+}
+
+#containLi2:hover ul#sub2 {
+    opacity: 1;
+    transition: 0.6s;
+    top: 150%;
+    position: absolute;
+    padding: 5px;
+    left: -5px;
+    border-radius: 5px;
+    background-color: var(--Extra5);
+    width: max-content;
+    box-shadow: 0 0px 2px black;
+}
+
+#containLi3:hover ul#sub3 {
+    opacity: 1;
+    transition: 0.6s;
+    top: 150%;
+    position: absolute;
+    padding: 5px;
+    left: -5px;
+    border-radius: 5px;
+    background-color: var(--Extra5);
+    width: max-content;
+    box-shadow: 0 0px 2px black;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.wrapHead {
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+fullNav {
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+    top: 0;
+    transition: all ease-in-out 0.5s;
+    background: var(--Accent10);
+}
+
+
+    fullNav:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+#brand {
+    color: #ccc;
+    float: left;
+}
+
+    #brand h1 a {
+        letter-spacing: 5px;
+        cursor: pointer;
+        color: white;
+    }
+
+fullNav nav {
+    float: right;
+    margin-top: 10px;
+}
+
+    fullNav nav li:not(.subLi) {
+        display: inline-block;
+        margin: 0 4px;
+    }
+
+    fullNav nav li a:not(.subLi a) {
+        padding: 10px 0;
+        text-decoration: none;
+        transition: all ease-in-out 0.5s;
+        color: white;
+    }
+
+        fullNav nav li a:not(.subLi a):hover {
+            transition: all ease-in-out 0.5s;
+            color: #ccc;
+        }
+
+
+
+
+
+
+
+
+
+
+copyright {
+    margin-left: 6vw;
+    color: white;
+}
+
+#aboutFooter {
+    width: 60%;
+    position: relative;
+}
+
+#linksFooter {
+    width: 40%;
+    position: relative;
+}
+
+#containerFooter {
+    display: inline-block;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    background-color: var(--Secondary30);
+    padding: 10px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer-links a:hover {
+    color: #DDDDDD;
+}
+
+.site-footer p, .site-footer ul {
+    margin-left: 10vw;
+    
+}
+
+.site-footer p {
+    color: white;
+}
+
+
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5
+    }
+
+        .site-footer hr.small {
+            margin: 20px 0
+        }
+
+    .site-footer h6 {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 6vw;
+        letter-spacing: 2px
+
+    }
+
+    
+
+        
+
+.footer-links {
+    padding-left: 0;
+    left: -35px;
+    position: relative;
+    list-style: none;
+    width: max-content;
+}
+
+    .footer-links li {
+        display: block;
+        width: max-content;
+    }
+
+    .footer-links a {
+        color: white
+    }
+
+         .footer-links a:hover {
+            color: #DDDDDD;
+            text-decoration: none;
+        }
+
+    .footer-links.inline li {
+        display: inline-block
+    }
+
+
+.copyright-text {
+    margin: 0
+}
+

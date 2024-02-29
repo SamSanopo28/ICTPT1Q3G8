@@ -1,0 +1,237 @@
+﻿:root {
+    --Primary60: #e9f4e9;
+    --Secondary30: #33353d;
+    --Accent10: #7a79dd;
+    --Extra5: #FFFFFF;
+    --textColorLight: #e9f1ff;
+    --textColorDark: #141417;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+html{
+}
+
+#datasMale gridItem {
+    border: 15px solid #2d3038;
+    background-color: var(--Secondary30);
+}
+
+#datasFemale gridItem {
+    border: 15px solid #e5f0e5;
+}
+
+
+#dataSect {
+    position: relative;
+    background-color: var(--Secondary30);
+    overflow: hidden;
+}
+
+    #dataSect leftTextContain{
+        color: var(--textColorLight);
+    }
+
+    #backgroundDataMale {
+        position: absolute;
+        height: 250px;
+        width: 110%;
+        background-color: var(--Secondary30);
+        transform: translateY(-20%) rotate(-2deg);
+    }
+#datasMale {
+    padding-bottom: 2%;
+    background-color: var(--Secondary30);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20%);
+    width: 101%;
+    gap: 50px;
+    position: relative;
+    height: auto;
+    color: var(--textColorDark);
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#datasMale *{
+    margin: 0;
+    padding: 0;
+}
+
+    #datasMale gridItem {
+        position: relative;
+        display: grid;
+        gap: 0%;
+        height: max-content;
+        
+    }
+
+#datasMale img{
+    position: relative;
+    width: 100%; 
+    aspect-ratio:  1/1;
+    object-fit: cover
+}
+
+#datasMale h1{
+    top: 80%;
+    color: white;
+    position: absolute;
+    font-size: 1.3em;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+
+    #datasMale gridItem shadowUp {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
+        opacity: 0;
+        transition: 0.5s
+    }
+
+    #datasMale gridItem shadowDown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        opacity: 0;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+        transition: 0.5s;
+    }
+
+    #datasMale gridItem:hover shadowUp, #datasMale gridItem:hover shadowDown, #datasMale gridItem:hover h1 {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+
+
+
+
+#dataSect2 {
+    position: relative;
+}
+
+#datasFemale {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20%);
+    width: 100%;
+    gap: 50px;
+    position: relative;
+    height: auto;
+    color: var(--textColorDark);
+    margin-bottom: 15vh;
+    margin-top: 10vh;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+    #datasFemale * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #datasFemale gridItem {
+        position: relative;
+        display: grid;
+        gap: 0%;
+        height: max-content
+    }
+
+    #datasFemale img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover
+    }
+
+    #datasFemale h1 {
+        top: 80%;
+        color: white;
+        position: absolute;
+        font-size: 1.3em;
+        z-index: 1;
+        opacity: 0;
+    }
+
+
+
+    #datasFemale gridItem shadowUp {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
+        opacity: 0;
+        transition: 0.5s
+    }
+
+    #datasFemale gridItem shadowDown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        opacity: 0;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+        transition: 0.5s;
+    }
+
+    #datasFemale gridItem:hover shadowUp, #datasFemale gridItem:hover shadowDown, #datasFemale gridItem:hover h1 {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+
+#b4txc{
+    color: white;
+}
+
+.smallen{
+    font-size: 1rem;
+}
+
+#mainTextCon h2{
+    color: var(--Accent10)
+}
+
+@media (max-width:  768px)
+{
+
+    html{
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 425px) {
+
+    html {
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 320px) {
+
+    html {
+        font-size: 0.3em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}

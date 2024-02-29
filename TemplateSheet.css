@@ -1,0 +1,347 @@
+﻿a{
+    text-decoration: none
+}
+
+
+leftContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    leftContainer img {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    leftContainer h1 {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        font-size: 3em;
+    }
+
+    leftContainer p {
+        position: absolute;
+        left: 2%;
+        top: 30%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+
+rightContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    rightContainer img {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    rightContainer h1 {
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        font-size: 3em;
+    }
+
+    rightContainer p {
+        position: absolute;
+        left: 2%;
+        top: 30%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+
+leftContainerFloat, leftContainerFloatSmall {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    leftContainerFloat img {
+        position: relative;
+        width: 45%;
+        left: 50%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+
+    leftContainerFloat h1 {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        font-size: 2.5em;
+    }
+
+    leftContainerFloat p {
+        position: absolute;
+        left: 5%;
+        top: 35%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+rightContainerFloat, rightContainerFloatSmall {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    margin: 0;
+}
+
+
+    rightContainerFloat img {
+        position: relative;
+        width: 40%;
+        left: 5%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+
+    rightContainerFloat h1 {
+        position: absolute;
+        left: 55%;
+        top: 10%;
+        font-size: 2.5em;
+    }
+
+    rightContainerFloat p {
+        position: absolute;
+        left: 55%;
+        top: 35%;
+        font-size: 1.5em;
+        width: 40%;
+    }
+
+
+
+    leftContainerFloatSmall img {
+        position: relative;
+        width: 35%;
+        left: 50%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+
+    leftContainerFloatSmall h1 {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        font-size: 2.5em;
+    }
+
+leftContainerFloatSmall p {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+
+
+    rightContainerFloatSmall img {
+        position: relative;
+        width: 35%;
+        left: 15%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0;
+    }
+
+
+rightContainerFloatSmall h1 {
+    position: absolute;
+    left: 55%;
+    top: 10%;
+    font-size: 2.5em;
+}
+
+rightContainerFloatSmall p {
+    position: absolute;
+    left: 55%;
+    top: 25%;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+
+
+fullContain {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+    fullContain img {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0vh;
+        height: 100%;
+        margin: 0;
+        top: 0%;
+        z-index: 0;
+        filter: brightness(50%);
+        object-fit: cover;
+    }
+
+
+fullContain h1 {
+    position: relative;
+    font-size: 4em;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+fullContain p:not(.left) {
+    position: relative;
+    left: 15%;
+    font-size: 1.5em;
+    width: 40%;
+    margin-top: 5vh;
+}
+
+fullContain p.left {
+    position: relative;
+    margin-top: 5vh;
+    left: 45%;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+
+
+textContain {
+    margin-top: 15vh;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-bottom: 15vh;
+
+}
+
+textContain h1 {
+    padding: 5px;
+    border-radius: 2px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 6em;
+    word-spacing: -5px;
+}
+
+    textContain h2 {
+        padding: 5px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 3em;
+        width: 60%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+leftTextContain {
+    margin-top: 15vh;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+    leftTextContain h1 {
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 6em;
+        margin-left: 3vw;
+        word-spacing: -5px;
+    }
+
+    leftTextContain h2 {
+        padding: 5px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 3em;
+        width: 60%;
+        white-space: nowrap;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+leftTextContainSmall {
+    margin-top: 15vh;
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+    leftTextContainSmall h1 {
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 4em;
+        margin-left: 3vw;
+        word-spacing: -5px;
+    }
+
+    leftTextContainSmall h2 {
+        padding: 5px;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 3em;
+        width: 60%;
+        white-space: nowrap;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
